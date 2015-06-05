@@ -1,0 +1,552 @@
+@charset "UTF-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	list-style-type: none;
+}
+
+li img {
+	display: block;
+}
+
+a {
+	outline: none;
+	border: none;
+	text-decoration: none;
+}
+
+img {
+	border: none;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+	font-size: 62.5%;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	color: #0a0b0d;
+	font-family: ‘ヒラギノ角ゴ ProN W3’, ‘メイリオ’, 'Lato', 'sans-serif';
+	text-align: left;
+}
+
+#wrapper{
+     width: 100%;
+     position: relative;
+     height: 100%;
+     min-height: 100%;
+	 background-color: #ffffff;
+}
+
+#header {
+	width: 100%;
+	height: 650px;
+	background-image: url(../../images/main_v.jpg);
+	background-repeat: none;
+	background-position: center;
+	position: relative;
+}
+
+#rotate {
+	position: absolute;
+	top: 350px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	color: #ffffff;
+	font-size: 2rem;
+	font-weight: 400;
+	font-style: italic;
+	text-align: center;
+}
+
+#spmenu {
+	width: 300px;
+	height: 50px;
+	background-color: #ffffff;
+	opacity: 0.8;
+	position: absolute;
+	top: 470px;
+	left: 50%;
+	margin-left: -150px;
+}
+
+#spmenu ul li {
+	float: left;
+	font-size: 1.2rem;
+	font-weight: 400;
+	margin-top: 17px;
+	border-left: 0.1px solid #888;
+	border-right: 0.1px solid #888;
+}
+
+#spmenu ul li:first-child {
+	border-left: none;
+}
+
+#spmenu ul li:last-child {
+	border-right: none;
+}
+
+#spmenu ul li a {
+	color: #41358d;
+	padding: 12px;
+	text-decoration: underline;
+}
+
+.resbutton_sp {
+	color: #3cc2d2;
+	background-color: #ffffff;
+	float: right;
+	margin: 10px 20px 0 0;
+	font-size: 1.2rem;
+  border: 2px solid #3cc2d2;
+	padding: 5px;
+}
+
+#gnavi {
+	width: 100%;
+	height: 50px;
+	display: none;
+	position: fixed;
+	top: 0px;
+	background-color: #ffffff;
+	opacity: 0.9;
+	z-index: 1;
+}
+
+div#left {
+	width: 35%;
+	float: left;
+}
+
+#gnavi h1 {
+	margin-left: 10px;
+	margin-top: 12px;
+	width: 149px;
+	height: 28px;
+	float: left;
+}
+
+div#right {
+	width: 65%;
+	float: right;
+}
+
+#gvani ul {
+    list-style-type: none;
+}
+
+#gnavi ul li {
+	position: relative;
+	width: 16.2%;
+	float: left;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#gnavi ul li a {
+	display: block;
+	margin: 0;
+	padding: 15px 0 5px;
+	color: #41358d;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1;
+	text-decoration: none;
+}
+
+#gnavi ul li:hover > a {
+    color: #19838d;
+}
+
+#gnavi ul li ul {
+    list-style: outside none none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#gnavi ul li ul li {
+   overflow: hidden;
+	width: 100%;
+	height: 0;
+	color: #ffffff;
+	 -moz-transition: .2s;
+	 -webkit-transition: .2s;
+	 -o-transition: .2s;
+	 -ms-transition: .2s;
+	 transition: .2s;
+}
+
+#gnavi ul li ul li a {
+	padding: 13px 20px;
+	background: #ffffff;
+	text-align: center;
+	font-size: 1.4rem;
+	font-weight: 400;
+	z-index: 1;
+}
+
+#gnavi ul li:hover ul li {
+	overflow: visible;
+	height: 38px;
+}
+
+button.res_button {
+	margin: 10px 0 0 0;
+	font-size: 1.2rem;
+	font-weight: 400;
+	padding: 5px;
+	color: #fff;
+	background-color: #db5461;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px #888888;
+	border: none !important;
+	cursor: pointer;
+	opacity: 1;
+}
+
+#main {
+	width: 100%;
+	margin-top: 0px;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#top,#middle,#bottom,#last {
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+#middle {
+	background-image: url(../../images/v2.jpg);
+}
+
+#bottom {
+	background-image: url(../../images/v3.jpg);
+}
+
+.pix, .content {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.inner{
+  min-height: 600px;
+  position: relative;
+}
+
+#skytree h2, #therapy h2, #promise h2 {
+	margin-bottom: 50px;
+}
+
+p.jpn {
+	text-align: right;
+	font-size: 1.5rem;
+	font-weight: 200;
+	line-height: 150%;
+	color: #0a0b0d;
+}
+
+p.eng {
+	margin: 0 0 50px 0;
+	text-align: left;
+	font-size: 1.7rem;
+	font-weight: 300;
+	line-height: 150%;
+	color: #0a0b0d;
+}
+
+#promiseJ .jpn {
+	margin-top: 2px;
+	line-height: 160%;
+}
+
+#promiseE .eng {
+	line-height: 140%;
+}
+
+.fa-arrow-circle-right {
+	margin-left: -8px;
+}
+
+.button {
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	padding-top: 6px;
+	background: #41358d;
+	opacity: 0.9;
+	color: #fff;
+	border: none;
+	outline: none;
+	position: relative;
+	width: 150px;
+	height: 30px;
+	font-size: 1.4rem;
+	text-align: 1;
+	vertical-align: baseline;
+	cursor: pointer;
+	transition: 800ms ease all;
+}
+
+.button a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.button:hover {
+  background:#fff;
+  color: #41358d;
+}
+
+.button:hover a {
+	color: #41358d;
+}
+
+.button:before, .button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #41358d;
+  transition: 400ms ease all;
+}
+
+.button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+.button:hover:before, .button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+#skytree,#therapy,#promise {
+	height: 100%;
+}
+
+#skytreeJ, #therapyJ, #promiseJ {
+	width: 49%;
+	float: left;
+}
+
+#skytreeE, #therapyE, #promiseE {
+	width: 49%;
+	float: right;
+}
+
+#pagetop {
+	font-weight: 700;
+	font-size: 1rem;
+	margin-top: 150px;
+}
+
+#pagetop a {
+	cursor: pointer;
+	text-decoration: none;
+	color: #41358d;
+}
+
+#pagetop a:hover {
+	color: #19838d;
+}
+
+#footer {
+	width: 100%;
+	height: 500px;
+	position: absolute;
+	top: 3650px;
+	background-color: #41358d;
+	z-index: 0;
+}
+
+#footerlist {
+	width: 40%;
+    float: left;
+}
+
+#footerlist h1 {
+	margin: 30px 0 0 40px;
+	text-align: left;
+}
+
+#footerlist table {
+	width: 480px;
+	margin: 20px 0 20px 40px;
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
+#footer table a {
+	color: #fff;
+}
+
+#footerlist table a:hover {
+	color: #3cc2d2;
+}
+
+#footerlist table tr td {
+	line-height: 30px;
+	width: 160px;
+}
+
+ul#fa-ul {
+	clear: both;
+	width: 300px;
+	height: 20px;
+	font-size: 2rem;
+	margin: 0 0 30px 40px;
+}
+
+ul#fa-ul > li {
+	width: 20%;
+	float: left;
+}
+
+ul#fa-ul a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#credit {
+	margin: 0 0 0 40px;
+	width: 300px;
+}
+
+#credit li {
+	float: left;
+	margin-right: 10%;
+}
+
+#contact {
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	text-align: center;
+}
+
+#contact li {
+	float: left;
+	margin: 0 0 30px 0;
+	padding: 15px;
+}
+
+#contact li:nth-child(2n+1) {
+	clear: left;
+}
+
+#contact li a {
+	color: #3cc2d2;
+	font-size: 1.2rem;
+	text-decoration: none;
+}
+
+#googlemaps {
+	height: auto;
+	width: 600px;
+	position: absolute;
+	top: 50px;
+	bottom: 50px;
+	right: 50px;
+	z-index: 1;
+}
+
+address {
+	font-size: 1rem;
+	font-weight: 300;
+	margin-top: 150px;
+	color: #fff;
+	text-align: center;
+}
+
+@media only screen and (max-width: 767px){
+	.pc {
+		display: none;
+	}
+
+	#header {
+		background-image: url(../../images/mainv_sp.jpg);
+		background-repeat: no-repeat;
+		background-position: top center;
+	}
+
+	#middle {
+	background-image: url(../../images/v2_sp.jpg);
+    }
+
+    #bottom {
+	background-image: url(../../images/v3_sp.jpg);
+    }
+
+	p.jpn, p.eng {
+	text-align: left;
+	padding-left: 12%;
+	padding-right: 12%;
+	margin-bottom: 30px;
+	width: 100%;
+	font-size: 1.4rem;
+}
+    #skytreeJ, #therapyJ, #promiseJ, #skytreeE, #therapyE, #promiseE {
+	clear: both;
+	width: 100%;
+}
+    #footer {
+		position: absolute;
+		top: 4350px;
+}
+    address {
+		margin-top: 470px;
+	}
+}
+
+@media only screen and (min-width: 960px){
+	.pc {
+		display: block;
+	}
+	.sp {
+		display: none;
+	}
+
+	#skytree {
+	background-image: url(../../images/tower-top.png);
+	background-repeat: no-repeat;
+    }
+
+    #therapy {
+	background-image: url(../../images/tower-mid.png);
+	background-repeat: no-repeat;
+    }
+
+    #promise {
+	background-image: url(../../images/tower-buttom.png);
+	background-repeat: no-repeat;
+    }
+}

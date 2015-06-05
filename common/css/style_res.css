@@ -1,0 +1,540 @@
+@charset "UTF-8";
+
+html {
+	width: 100%;
+	font-size: 62.5%;
+}
+
+body {
+	width: 100%;
+	color: #0a0b0d;
+	text-align: left;
+}
+
+body, html, main {
+    height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a img {
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+li img {
+	display: block;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Lato', 'sans-serif';
+}
+
+#wrapper {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+#main {
+    height: auto;
+	width: 100%;
+	background-image: url(../../Reservations/images/diamond.gif);
+	background-repeat: repeat;
+}
+
+button.res_button {
+	margin: 10px 0 0 20px;
+	font-size: 1.1rem;
+	font-weight: 600;
+	padding: 4px;
+	color: #db5461;
+	background-color: #fff;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+    border: 2px solid #db5461;
+	-moz-border: 2px solid #db5461;
+	-webkit-border: 2px solid #db5461;
+	float: left;
+	cursor: pointer;
+	opacity: 1;
+}
+
+.fa-bed {
+	margin-right: 5px;
+}
+
+#left h3 {
+	font-size: 14px;
+	margin-top: 15px;
+	margin-left: 15px;
+	float: left;
+}
+
+#jpn {
+	color: #0a0b0d;
+	font-weight: 300;
+}
+
+#jpn:hover {
+	color: #19838d;
+	font-weight: 400;
+}
+
+#eng {
+	color: #db5461;
+	font-weight: 700;
+}
+
+#gnavi {
+	width: 100%;
+	height: 50px;
+	background-color: #ffffff;
+	opacity: 0.9;
+	z-index: 1;
+}
+
+#gnavi h1 {
+	margin: 10px 0 0 10px;
+	width: 149px;
+	height: 28px;
+	float: left;
+}
+
+div#right {
+	width: 50%;
+	float: right;
+}
+
+#gvani ul {
+    list-style-type: none;
+}
+
+#gnavi ul li {
+	position: relative;
+	width: 20%;
+	float: left;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#gnavi ul li a {
+	display: block;
+	margin: 0;
+	padding: 15px 0 5px;
+	color: #41358d;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1;
+	text-decoration: none;
+}
+
+#gnavi ul li:hover > a {
+    color: #19838d;
+}
+
+#gnavi ul li ul {
+    list-style: outside none none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#gnavi ul li ul li {
+   overflow: hidden;
+	width: 100%;
+	height: 0;
+	color: #ffffff;
+	 -moz-transition: .2s;
+	 -webkit-transition: .2s;
+	 -o-transition: .2s;
+	 -ms-transition: .2s;
+	 transition: .2s;
+}
+
+#gnavi ul li ul li a {
+	padding: 13px 20px;
+	background: #ffffff;
+	text-align: center;
+	font-size: 1.4rem;
+	font-weight: 400;
+	z-index: 1;
+}
+
+#gnavi ul li:hover ul li {
+	overflow: visible;
+	height: 38px;
+}
+
+#res {
+	background-color: #ffffff;
+	width: 80%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#res p {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	color: #41358d;
+	font-size: 3rem;
+	font-weight: 400;
+	text-align: center;
+	margin: 20px 0 10px 0;
+}
+
+#process {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+h2.heading {
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-align: left;
+  color: #506982;
+  border-bottom: 1px solid #506982;
+  padding-bottom: 3px;
+  margin-bottom: 30px;
+  clear: both;
+}
+
+form {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+#group {
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+.control {
+	float: left;
+	position: relative;
+	input[type="text"],
+	input[type="email"],
+	input[type="number"],
+	input[type="date"],
+	input[type="tel"],
+	textarea,
+	select {
+		padding: 12px;
+		font-size: 1.4rem;
+		border: 1px solid #888;
+		width: 100%;
+		margin-bottom: 20px;
+		color: #888;
+	}}
+
+input[type="text"],
+textarea {
+	outline: none;
+	border: 1px solid #aaa;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+	box-shadow: 0 0 7px #41358d;
+	border: 1px solid #41358d;
+}
+
+#name, #email, #address, #city {
+	clear: both;
+}
+
+#name, #address  {
+	width: 85%;
+}
+
+#email  {
+	width: 40%;
+	}
+
+#phone  {
+	width: 40%;
+	margin-left: 5%;
+	}
+
+#city, #arr {
+	width: 25%;
+}
+
+#zipcode, #country, #dep  {
+	width: 25%;
+	margin-left: 5%;
+}
+
+label {
+	position: absolute;
+	left: 15px;
+	top: -20px;
+	width: auto;
+	color: #999;
+	font-size: 1.4rem;
+	font-weight: 400;
+}
+
+textarea {
+		resize: none;
+		height: 150px;
+		cursor: pointer;
+}
+
+input {
+	font-size: 1.4rem;
+	font-weight: 300;
+	color: #0a0b0d;
+	height: 25px;
+	width: 100%;
+	margin: 0 0 30px 15px;
+	cursor: pointer;
+}
+
+input:active {
+	border: 1px solid #41358d;
+}
+
+select{
+	padding: 5px;
+	font-size: 1.4rem;
+	font-weight: 300;
+	width: 100%;
+	height: 30px;
+	border: 1px solid #999;
+	margin: 0 0 30px 15px;
+	color: #888;
+	cursor: pointer;
+}
+
+#beds {
+	clear: both;
+	width: 100%;
+}
+
+#ppl {
+	float: left;
+	width: 10%;
+}
+
+#rm, #bd {
+	float: left;
+	width: 10%;
+	margin-left: 5%;
+}
+
+#req {
+	clear: both;
+	text-align: left;
+	width: 100%;
+}
+
+#req p {
+	text-align: left;
+	font-size: 1.4rem;
+	font-weight: 400;
+	color: #888;
+}
+
+#comm {
+	margin-left: 15px;
+}
+
+#comm p {
+	margin: 0;
+}
+
+textarea {
+		height: 80px;
+		width: 95%;
+}
+
+button.gores {
+	margin: 15px 0 100px 15px;
+	width: 200px;
+	height: 40px;
+	font-size: 1.6rem;
+	font-weight: 400;
+	padding: 5px;
+	font-family: 'Lato', 'sans-serif' !important;
+	color: #fff;
+	background-color: #db5461;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 1px 1px 1px #888888;
+	-webkit-box-shadow: 1px 1px 1px #888888;
+	box-shadow: 1px 1px 1px #888888;
+}
+
+#footer {
+	width: 100%;
+	height: 500px;
+	position: absolute;
+	top: 1000px;
+	background-color: #41358d;
+	z-index: 0;
+}
+
+#footerlist {
+	width: 40%;
+    float: left;
+}
+
+#footerlist h1 {
+	margin: 30px 0 0 40px;
+	text-align: left;
+}
+
+#footerlist table {
+	width: 480px;
+	margin: 20px 0 20px 40px;
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
+#footer table a {
+	color: #fff;
+}
+
+#footerlist table a:hover {
+	color: #3cc2d2;
+}
+
+#footerlist table tr td {
+	line-height: 30px;
+	width: 160px;
+}
+
+ul#fa-ul {
+	clear: both;
+	width: 300px;
+	height: 20px;
+	font-size: 2rem;
+	margin: 0 0 30px 40px;
+}
+
+ul#fa-ul > li {
+	width: 20%;
+	float: left;
+}
+
+ul#fa-ul a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#credit {
+	margin: 0 0 0 40px;
+	width: 300px;
+}
+
+#credit li {
+	float: left;
+	margin-right: 10%;
+}
+
+#contact {
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	text-align: center;
+}
+
+#contact li {
+	float: left;
+	margin: 0 0 30px 0;
+	padding: 15px;
+}
+
+#contact li:nth-child(2n+1) {
+	clear: left;
+}
+
+#contact li a {
+	color: #3cc2d2;
+	font-size: 1.2rem;
+	text-decoration: none;
+}
+
+#googlemaps {
+	height: auto;
+	width: 600px;
+	position: absolute;
+	top: 50px;
+	bottom: 50px;
+	right: 50px;
+	z-index: 1;
+}
+
+address {
+	font-size: 1rem;
+	font-weight: 300;
+	margin-top: 150px;
+	color: #fff;
+	text-align: center;
+}
+
+@media only screen and (max-width: 767px){
+	.pc {
+		display: none;
+}
+
+    #main {
+		background-image: none;
+		background-color: #fff;
+	}
+
+	h1 {
+		margin-top: 50px;
+	}
+
+    #name, #address, #email, #phone, #city, #arr, #zipcode, #country, #dep, #comm p {
+		width: 90%;
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	#bd, #rm, #ppl {
+		width: 20%;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	address {
+		margin-top: 480px;
+	}
+
+	#footer {
+		position: absolute;
+		top: 1150px;
+	}
+}
+
+@media only screen and (min-width: 960px){
+	.pc {
+		display: block;
+	}
+	.sp {
+		display: none;
+	}
+}

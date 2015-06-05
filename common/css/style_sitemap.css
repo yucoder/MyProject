@@ -1,0 +1,367 @@
+@charset "UTF-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	list-style-type: none;
+}
+
+li img {
+	display: block;
+}
+
+a img {
+	border: none;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+	font-size: 62.5%;
+}
+
+body {
+	width: 100%;
+	color: #0a0b0d;
+	font-family: ‘ヒラギノ角ゴ ProN W3’, ‘メイリオ’, 'Lato', 'sans-serif'; 
+	text-align: left;
+}
+
+body, html, main {
+    height: 100%;
+}
+
+#header {
+	width: 100%;
+	height: 650px;
+	background-image: url(../../Sitemap/images/bathroom.jpg);
+	background-repeat: no-repeat;
+}
+
+button.res_button {
+	margin: 10px 0 0 20px;
+	font-size: 1.1rem;
+	font-weight: 600;
+	padding: 4px;
+	color: #db5461;
+	background-color: #fff;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;	
+	border-radius: 5px;
+    border: 2px solid #db5461;
+	-moz-border: 2px solid #db5461;
+	-webkit-border: 2px solid #db5461;
+	float: left;
+	cursor: pointer;
+	opacity: 1;
+}
+
+.fa-bed {
+	margin-right: 5px;
+}
+
+#left h3 {
+	font-size: 14px;
+	margin-top: 15px;
+	margin-left: 15px;
+	float: left;
+}
+
+#jpn {
+	color: #0a0b0d;
+	font-weight: 300;
+}
+
+#jpn:hover {
+	color: #19838d;
+	font-weight: 400;
+}
+
+#eng {
+	color: #db5461;
+	font-weight: 700;
+}
+
+#gnavi {
+	width: 100%;
+	height: 50px;
+	background-color: #ffffff;
+	opacity: 0.9;
+	z-index: 1;	
+}
+
+#gnavi h1 {
+	margin: 10px 0 0 10px;
+	width: 149px;
+	height: 28px;
+	float: left;
+}
+
+div#right {
+	width: 50%;
+	float: right;
+}
+
+#gvani ul {
+    list-style-type: none;
+}
+
+#gnavi ul li {
+	position: relative;
+	width: 20%;
+	float: left;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#gnavi ul li a {
+	display: block;
+	margin: 0;
+	padding: 15px 0 5px;
+	color: #41358d;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1;
+	text-decoration: none;
+}
+
+#gnavi ul li:hover > a {
+    color: #19838d;
+}
+
+#gnavi ul li ul {
+    list-style: outside none none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#gnavi ul li ul li {
+   overflow: hidden;
+	width: 100%;
+	height: 0;
+	color: #ffffff;
+	 -moz-transition: .2s;
+	 -webkit-transition: .2s;
+	 -o-transition: .2s;
+	 -ms-transition: .2s;
+	 transition: .2s;
+}
+
+#gnavi ul li ul li a {
+	padding: 13px 20px;
+	background: #ffffff;
+	text-align: center;
+	font-size: 1.4rem;
+	font-weight: 400;
+	z-index: 1;
+}
+
+#gnavi ul li:hover ul li {
+	overflow: visible; 
+	height: 38px;
+}
+
+#sitelist {
+	width: 100%;
+	height: 650px;
+	color: #fff;
+}
+
+#sitelist h2 {
+	margin: 2% 0 0 5%;
+	font: 1.8rem;
+}
+
+.sitemapitem {
+	width: 200px;
+	margin: 2% 0 0 5%;
+	float: left;
+}
+
+.sitemapitem a {
+	color: #ffffff;
+	text-shadow: 1px 2px 2px #999;
+}
+	
+.sitemapitem h4 {
+	font-size: 2rem;
+	border: none;
+}
+
+.sitemapitem ul {
+	margin-bottom: 30px;
+	text-indent: 20px;
+}
+
+.sitemapitem ul li {
+	font-size: 1.6rem;
+	line-height: 150%;
+}
+
+#corp, #corpj {
+	color: #fff;
+	text-align: left;
+	margin-left: 200px;
+}
+
+#corpj ul li {
+	font-size: 1.3rem;
+	font-weight: 400;
+}
+
+#footer {
+	width: 100%;
+	height: 500px; 
+	position: absolute;
+	top: 650px;
+	background-color: #41358d;
+	z-index: 0;
+}
+
+#footerlist {
+	width: 40%;
+    float: left;
+}
+
+#footerlist h1 {
+	margin: 30px 0 0 40px;
+	text-align: left;
+}
+
+#footerlist table {
+	width: 480px;
+	margin: 20px 0 20px 40px;
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
+#footer table a {
+	color: #fff;
+}
+
+#footerlist table a:hover {
+	color: #3cc2d2;
+}
+
+#footerlist table tr td {
+	line-height: 30px;
+	width: 160px;
+}
+
+ul#fa-ul {
+	clear: both;
+	width: 300px;
+	height: 20px;
+	font-size: 2rem;
+	margin: 0 0 30px 40px;
+}
+
+ul#fa-ul > li {
+	width: 20%;
+	float: left;
+}
+
+ul#fa-ul a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#credit {
+	margin: 0 0 0 40px;
+	width: 300px;
+}
+
+#credit li {
+	float: left;
+	margin-right: 10%;
+}
+
+#contact {
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	text-align: center;
+}
+
+#contact li {
+	float: left;
+	margin: 0 0 30px 0;
+	padding: 15px;
+}
+
+#contact li:nth-child(2n+1) {
+	clear: left;
+}
+
+#contact li a {
+	color: #3cc2d2;
+	font-size: 1.2rem;
+	text-decoration: none;
+}
+
+#googlemaps {
+	height: auto;
+	width: 600px;
+	position: absolute;
+	top: 50px;
+	bottom: 50px;
+	right: 50px;
+	z-index: 1;
+}
+
+address {
+	font-size: 1rem;
+	font-weight: 300;
+	margin-top: 150px;
+	color: #fff;
+	text-align: center;
+}
+
+@media only screen and (max-width: 767px){
+	.pc {
+		display: none;
+	}	
+	
+	#header {
+		height: 1400px;
+		background-image: none;
+		background-color: #FFF;
+	}
+	
+	#sitelist, .sitemapitem a {
+		color: #0a0b0d;
+		text-shadow: none;
+	}
+	
+	#corp, #corpj {
+		margin-left: 5%;
+		margin-top: 10%;
+		color: #0a0b0d;
+	}
+	
+	address {
+		margin-top: 480px;
+	}
+	
+	#footer {
+		position: absolute;
+		top: 1400px;
+	}
+}
+
+@media only screen and (min-width: 960px){
+	.pc {
+		display: block;
+	}
+	.sp {
+		display: none;
+	}
+}

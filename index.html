@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css' />
+<link href="common/css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+<link rel="image_src" href="mainv.jpg" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascrpit" />
+<meta name="viewport" content="width=device-width.user-scalable=0" />
+<meta name="keywords" content="Tokyo SkyTree, Boutique Hotel, Downton, Sightseeing, Hospitality, Travel, Japan　東京スカイツリー, デザイナーホテル, 東京観光, ブティックホテル, 国内旅行, ソラマチ" />
+<meta name="description" content="SkyTree Hotel is a boutique hotel located in the center of Japan, with beautifully designed rooms and healthy Japanese dining options, promising the ultimate Tokyo visit for all travelers. スカイツリーホテルは東京スカイツリーに隣接するデザイナーズホテルです。　ミシュラン星１獲得のセラビーカフェと禅を貴重とした美しい客室で、世界中のお客様をお迎えしております" />
+<title>SkyTree Hotel</title>
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="wrapper">
+<div id="header">
+  
+  <div id="spmenu" class="sp">
+  <ul>
+    <li><a href="Rooms/rooms.html">ROOMS</a></li>
+    <li><a href="Offerings/offering.html">OFFERING</a></li>
+    <li><a href="#">DINING</a></li>
+    <li><a href="#">ACCESS</a></li>
+  </ul>
+  </div>
+
+  <div id="gnavi" class="fixed-nav-bar pc">
+  <div id="left">
+    <h1><a href="index.html"><img src="common/images/logo_sm.png" width="149" height="27" alt="SkyTree Hotel"/></a></h1>
+  </div>
+
+  <div id="right">
+    <button class="resbutton_sp sp" type="submit" onclick="window.open('Reservations/res.html')"><i class="fa fa-bed fa-fw"></i>RESERVATIONS</button>
+    <ul class="pc">
+      <li><a href="Rooms/rooms.html">ROOMS</a>
+        <ul>
+          <li><a href="Reservations/res.html">Reservations</a></li>
+          <li><a href="Rooms/rooms.html">Single</a></li>
+          <li><a href="Rooms/rooms.html">Double</a></li>
+        </ul>
+      </li>
+      <li><a href="Offerings/Offering.html">OFFERING</a>
+        <ul>
+          <li><a href="Offerings/Offering.html">SkyView Gym</a></li>
+          <li><a href="Offerings/Offering.html">SkyView Pool</a></li>
+          <li><a href="Offerings/Offering.html">Visitor Information</a></li>
+        </ul>
+      </li>
+      <li><a href="#">DINING</a>
+        <ul>
+          <li><a href="#">Dining Menu</a></li>
+          <li><a href="#">Therapy Bar</a></li>
+        </ul>
+      </li>
+      <li><a href="#">OUR STORY</a>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Think Green</a></li>
+          <li><a href="#">Employment</a></li>
+        </ul>
+      </li>
+      <li><a href="location.html">LOCATION</a>
+        <ul>
+          <li><a href="#">Our Location</a></li>
+          <li><a href="#">From Narita</a></li>
+          <li><a href="#">From Haneda</a></li>
+        </ul>
+      </li>
+      <li><button class="res_button" type="submit" onclick="window.open('Reservations/res.html')"><i class="fa fa-bed fa-fw"></i> RESERVATIONS</button>
+      </li>
+    </ul>
+  </div>
+  </div>
+
+  <div id="rotate" class="pc">
+    <div>"Best place to stay in Japan. I wish I could move in." <br />-New York Times</div>
+    <div>"...has the astomsphere of a discrete members club <br />and comforting feeling of serenity." <br />-Conde Nast</div>
+    <div>"the most amazing bilingual staff <br />eased the stress of traveling alone in Japan."<br /> -TripAdvisor Traveler</div>
+    <div>"wins my 5 stars!!" <br />-Vogue</div>
+  </div>
+</div>
+
+<div id="main">
+<div id="skytree" class="content">
+  <div class="inner">
+    <h2 class="pc"><img src="images/skytree.png" width="300" height="150" alt="SkyTree Hotel"/></h2>
+    <h2 class="sp"><img src="images/skytree_sp.png" width="300" height="100" alt="SkyTree Hotel"/></h2>
+     <div id="skytreeJ" class="copy">
+      <p class="jpn">スカイツリーホテルは、東京下町押上の観光スポット、<br />東京スカイツリーのふもとにあるデザイナーズホテルです。<br /><br />日本のおもてなし精神を大事にしながら、世界中のお客様に<br />快適かつスタイリッシュな空間を提供しております。<br /><br />首都高速駒形出口より３００メートル、<br />押上駅直結徒歩１分でお越しいただけます。<br />ビジネス、観光、特別な日のご滞在に、ぜひお越し下さいませ。</p>
+    </div>
+    <div id="skytreeE" class="copy">
+      <p class="eng">Nested in the quaint Oshiage downtown neighbordhood, <br />SkyTree hotel features a beautiful inner Japanese garden,<br />guestrooms with a magniticent view and an on-site terrace restaurant.<br /><br/>Conviniently located at the foot of the number one tourist spot,<br /> The Tokyo SkyTree and within a walking distance <br />from Asakusa Shrine, the best of Tokyo sightseeing <br />is all within a quick subway ride from this boutique hotel.</p>
+    </div>
+    <p class="button"><a href="#"><i class="fa fa-arrow-circle-right fa-fw"></i>READ MORE</a></p>
+  </div>
+</div>
+
+<div id="middle" class="pix">
+  <div class="inner">
+  </div>
+</div>
+
+<div id="therapy" class="content">
+  <div class="inner">
+    <h2 class="pc"><img src="images/therapy.png" width="300" height="150" alt="Therapeutic"/></h2>
+    <h2 class="sp"><img src="images/therapy_sp.png" width="300" height="100" alt="Therapeutic"/></h2>
+     <div id="therapyJ" class="copy">
+      <p class="jpn">ホテル１階のレストランTHERAPYは、<br />禅の考えをもとにデザインされた心と身体を癒す空間です。<br />ゆっくりとした極上の時間の流れる店内で、<br />ヘルシーな創作料理をお楽しみください。<br /><br />２０１４年度コルドンブルー受賞、橋本シェフが<br />全国から厳選したオーガニック素材で、<br />自慢のセラピーフードをご用意してお待ちしております。<br /></p>
+    </div>
+    <div id="therapyE" class="copy">
+      <p class="eng">Come in for a therapeutic dining experience<br /> at our award-winning Therapy Cafe. <br />Grab a seat at the main dining room or at the bar, <br />both of which are decorated with zen-focused interiors.<br /><br />Try our signature dish, Kobe beef with wasabi-mango salsa, <br />prepared by our award-winning chef, Ted Hashimoto.</p>
+    </div>
+     <p class="button"><a href="#"><i class="fa fa-arrow-circle-right fa-fw"></i>READ MORE</a></p>
+  </div>
+</div>
+
+<div id="bottom" class="pix">
+  <div class="inner">
+  </div>
+</div>
+
+<div id="promise" class="content">
+  <div class="inner">
+    <h2 class="pc"><img src="images/promise.png" width="300" height="150" alt="Our Promise"/></h2>
+    <h2 class="sp"><img src="images/promise_sp.png" width="300" height="100" alt="Our Promise"/></h2>
+      <div id="promiseJ" class="copy">
+        <p class="jpn">私たちは３つのおもてなしサービスをお約束しています<br /><br />
+                      １. お客様のご要望に合わせたカスタムメイドサービス<br />
+                      ２. 自社サイトで最安値のご提供<br />
+                      ３. 専任のコンシェルジュが、24時間旅のサポート<br />
+        </p>
+      </div>
+      <div id="promiseE" class="copy">
+        <p class="eng">As a valued customer of SkyTree Hotel, we promise you,<br /><br />
+                      1. Tailor-made service for each of our guests<br />
+                      2. Best rate on our website<br />
+                      3. Your personal concierge throughout your trip.
+        </p>
+      </div>
+      <div>
+        <p class="button"><a href="#"><i class="fa fa-arrow-circle-right fa-fw"></i>READ MORE</a></p>
+        <p id="pagetop"><a href="index.html">BACK TO TOP</a></p>
+      </div>
+  </div>
+</div>
+</div>
+
+<div id="footer">
+  <div id="googlemaps" class="pc"></div>
+    <div id="footerlist">
+    <h1><a href="index.html"><img src="common/images/logo_white.png" width="198" height="34" alt="SkyTree Hotel"/></a></h1>
+    <table class="pc">
+      <tr>
+        <td><a href="index.html">Home</a></td>
+        <td><a href="#">Dining</a></td>
+        <td><a href="#">Tokyo SkyTree</a></td>
+      </tr>
+      <tr>
+        <td><a href="Reservations/res.html">Reservations</a></td>
+        <td><a href="#">Food Menu</a></td>
+        <td><a href="Offerings/offering.html">Visitor Information</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">Best Rate Gurantee</a></td>
+        <td><a href="#">Therapy Bar</a></td>
+        <td><a href="#">Our Location</a></td>
+      </tr>
+      <tr>
+        <td><a href="Rooms/rooms.html">Rooms</a></td>
+        <td><a href="Offerings/Offering.html">Services</a></td>
+        <td><a href="#">From Narita</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">Our Employees</a></td>
+        <td><a href="#">Our Story</a></td>
+        <td><a href="#">From Haneda</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">Employment</a></td>
+      	<td><a href="#">Think Green</a></td>
+        <td><a href="Sitemap/Sitemap.html">SiteMap</a></td>
+      </tr>
+    </table>
+  </div>
+  <ul id="fa-ul" class="pc">
+    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+    <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+  </ul>
+  <ul id="credit" class="pc">
+    <li><a href="#"><img src="common/images/JA.jpg" width="67" height="50" alt="Japan Hotel Association"/></a></li>
+    <li><a href="#"><img src="common/images/BRG.png" width="57" height="50" alt="Best Rate Gurantee"/></a></li>
+    <li><a href="#"><img src="common/images/TripA.jpg" width="52" height="50" alt="Winner of Trip Advisor Award 2014"/></a></li>
+  </ul>
+  <ul id="contact" class="sp">
+    <li><a href="tel:+810312345678"><img src="common/images/call.png" width="65" height="65" alt="Call Us"/></a></li>
+    <li><a href="mailto:info@dammy.com"><img src="common/images/email.png" width="65" height="65" alt="Email Us"/></a></li>
+    <li><a href="www.facebook.com/skytreehotel"><img src="common/images/facebook.png" width="65" height="65" alt="Facebook Us"/></a></li>
+    <li><a href="www.twitter.com/skytreehotel"><img src="common/images/twitter.png" width="65" height="65" alt="Tweet Us"/></a></li>
+    <li><a href="https://maps.google.com/?q=35.710427, 139.81101"><i class="fa fa-map-marker fa-5x fa-fw"></i>Map Us!</a></li>
+  </ul>
+  <address>SkyTree Hotel Co. Tokyo, Japan. All Rights Reserved. 2015</address>
+</div>
+</div>
+<script type="text/javascript">
+(function($){
+    $.fn.extend({
+        rotaterator: function(options) {
+
+            var defaults = {
+                fadeSpeed: 4000,
+                pauseSpeed: 4000,
+				child:null
+            };
+
+            var options = $.extend(defaults, options);
+
+            return this.each(function() {
+                  var o =options;
+                  var obj = $(this);
+                  var items = $(obj.children(), obj);
+				  items.each(function() {$(this).hide();})
+				  if(!o.child){var next = $(obj).children(':first');
+				  }else{var next = o.child;
+				  }
+				  $(next).fadeIn(o.fadeSpeed, function() {
+						$(next).delay(o.pauseSpeed).fadeOut(o.fadeSpeed, function() {
+							var next = $(this).next();
+							if (next.length == 0){
+									next = $(obj).children(':first');
+							}
+							$(obj).rotaterator({child : next, fadeSpeed : o.fadeSpeed, pauseSpeed : o.pauseSpeed});
+						})
+					});
+            });
+        }
+    });
+})(jQuery);
+
+ $(document).ready(function() {
+        $('#rotate').rotaterator({fadeSpeed:4000, pauseSpeed:4000});
+ });
+
+  $(window).scroll(function(){
+  if($(window).scrollTop() > 50){
+      $("#gnavi").fadeIn("slow");
+  }
+});
+$(window).scroll(function(){
+  if($(window).scrollTop() < 50){
+      $("#gnavi").fadeOut("fast");
+  }
+});
+
+	var position = [35.710427, 139.81101];
+    function showGoogleMaps() {
+    var latLng = new google.maps.LatLng(position[0], position[1]);
+
+    var mapOptions = {
+    zoom: 15,
+    streetViewControl: false,
+    scaleControl: false,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    center: latLng
+    };
+
+    map = new google.maps.Map(document.getElementById('googlemaps'),
+    mapOptions);
+
+    marker = new google.maps.Marker({
+    position: latLng,
+    map: map,
+    draggable: false,
+    animation: google.maps.Animation.DROP
+    });
+    }
+
+    google.maps.event.addDomListener(window, 'load', showGoogleMaps);
+</script>
+
+</body>
+</html>

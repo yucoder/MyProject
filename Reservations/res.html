@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css' />
+<link href="../common/css/style_res.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+<link rel="image_src" href="mainv.jpg" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascrpit" />
+<meta name="viewport" content="width=device-width.user-scalable=0" />
+<meta name="keywords" content="Tokyo SkyTree, Boutique Hotel, downtown, Sightseeing, Hospitality, Travel, Japan　東京スカイツリー, デザイナーホテル, 東京観光, ブティックホテル, 国内旅行, ソラマチ" />
+<meta name="description" content="SkyTree Hotel is a boutique hotel located in the center of Japan, with beautifully designed rooms and healthy Japanese dining experiences promising the ultimate Tokyo visit for all travelers. スカイツリーホテルは東京スカイツリーに隣接するデザイナーズホテルです。　ミシュラン星１獲得のセラビーカフェと禅を貴重とした美しい客室で、世界中のお客様をお迎えしております" />
+<title>Reservations -SkyTree Hotel</title>
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="wrapper">
+<div id="header">
+  <div id="gnavi" class="fixed-nav-bar">
+  <div id="left">
+    <h1><a href="../index.html"><img src="../common/images/logo_sm.png" alt="SkyTree Hotel" width="149" height="27"/></a></h1>
+     <button class="res_button" type="submit" onclick="window.open('Reservations/res.html')"><i class="fa fa-bed fa-fw"></i>RESERVATIONS</button>
+    <h3><a href="res.html" id="eng">ENG</a>/<a href="res_j.html" id="jpn">日本語</a></h3>
+  </div>
+  <div id="right" class="pc">
+    <ul>
+      <li><a href="../Rooms/rooms.html">ROOMS</a>
+        <ul>
+          <li><a href="../Rooms/rooms.html">Reservations</a></li>
+          <li><a href="../Rooms/rooms.html">Single</a></li>
+          <li><a href="../Rooms/rooms.html">Double</a></li>
+        </ul>
+      </li>
+      <li><a href="../Offerings/offering.html">OFFERING</a>
+        <ul>
+          <li><a href="../Offerings/Offering.html">SkyView Gym</a></li>
+          <li><a href="../Offerings/Offering.html">SkyView Pool</a></li>
+          <li><a href="../Offerings/Offering.html">Visitor Information</a></li>
+        </ul>
+      </li>
+      <li><a href="#">DINING</a>
+        <ul>
+          <li><a href="#">Dining Menu</a></li>
+          <li><a href="#">Therapy Bar</a></li>
+        </ul>
+      </li>
+      <li><a href="#">OUR STORY</a>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Think Green</a></li>
+          <li><a href="#">Employment</a></li>
+        </ul>
+      </li>
+      <li><a href="#">LOCATION</a>
+        <ul>
+          <li><a href="#">Our Location</a></li>
+          <li><a href="#">From Narita</a></li>
+          <li><a href="#">From Haneda</a></li>
+        </ul>
+      </li>
+    </ul>
+</div>
+</div>
+</div>
+
+<div id="main">
+<div id="res">
+<p class="pc"><img src="images/suite.jpg" width="800" height="120" alt="Sample Room Picture 客室一例"/></p>
+<h1 class="pc"><img src="images/res_title.png" width="800" height="50" alt="SkyTree Hotel Reservation Form"/></h1>
+<h1 class="sp">SKYTREE HOTEL RESERVATION FORM</h1>
+<p id="process" class="pc"><img src="images/steps.png" width="95" height="38" alt="3 steps reservation"/></p>
+<form action="#">
+  <div id="group">
+    <h2 class="heading">GUEST INFORMATION</h2>
+    <div id="name" class="control">
+      <input type="text" id="name01" name="name01" />
+      <label for="name01" class="translate">Name</label>
+    </div>
+    <div id="email" class="control">
+      <label for="email01" class="translate">Email</label>
+      <input type="text" id="email01" name="email01" />
+    </div>
+    <div id="phone" class="control">
+      <label for="phone01" class="translate">Phone</label>
+      <input type="text" id="phone01" name="phone01" />
+    </div>
+    <div id="address" class="control">
+      <label for="address01" class="translate">Address</label>
+      <input type="text" id="address01" name="address01" />
+    </div>
+    <div id="city" class="control">
+      <label for="city01" class="translate">City</label>
+      <input type="text" id="city01" name="city01" />
+    </div>
+    <div id="zipcode" class="control">
+      <label for="zipcode01" class="translate">Zip Code</label>
+      <input type="text" id="zipcode01" name="zipcode01" />
+    </div>
+    <div id="country" class="control">
+      <label for="country01" class="translate">Country</label>
+      <input type="text" id="country01" name="country01" />
+    </div>
+    </div>
+
+    <div>
+    <h2 id="book" class="heading">BOOKING</h2>
+    <div class="group">
+    <div id="calendar">
+      <div id="arr" class="control">
+        <label for="arrive">Arrive (YYYY/MM/DD)</label>
+        <input type="text" id="arrive" name="arrive" />
+      </div>
+      <div id="dep" class="control">
+        <label for="depart">Depart (YYYY/MM/DD)</label>
+        <input type="text" id="depart" name="depart" />
+      </div>
+    </div>
+    </div>
+    <div class="group">
+    <div id="beds" class="control">
+      <div id="ppl">
+        <label for="people">People</label>
+        <select name="people" id="people">
+          <option value="blank"></option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+      </div>
+      <div id="rm" class="control">
+        <label for="room">Room</label>
+        <select name="room" id="room">
+          <option value="blank"></option>
+          <option value="sinle">Single</option>
+          <option value="double">Double</option>
+        </select>
+      </div>
+      <div id="bd" class="control">
+        <label for="bedding">Bedding</label>
+        <select name="bedding" id="bedding">
+          <option value="blank"></option>
+          <option value="queen">Queen</option>
+          <option value="double">Double</option>
+        </select>
+      </div>
+    </div>
+    </div>
+      <div id="req">
+        <div id="comm" class="contol">
+        <p>Comments: Please describe your requests. e.g. Extra pillows, children's cots</p>
+        <textarea name="comments" id="comments" rows="40" cols="6"></textarea>
+        </div>
+        <button class="gores" type="submit" value="Submit">SHOW AVAILABILITY</button>
+      </div>
+  </div>
+</form>
+</div>
+</div>
+</div>
+
+<div id="footer">
+  <div id="googlemaps" class="pc"></div>
+    <div id="footerlist">
+    <h1><a href="../index.html"><img src="../common/images/logo_white.png" width="198" height="34" alt="SkyTree Hotel"/></a></h1>
+    <table class="pc">
+      <tr>
+        <td><a href="../index.html">Home</a></td>
+        <td><a href="#">Dining</a></td>
+        <td><a href="#">Tokyo SkyTree</a></td>
+      </tr>
+      <tr>
+        <td><a href="res.html">Reservations</a></td>
+        <td><a href="#">Food Menu</a></td>
+        <td><a href="../Offerings/Offering.html">Visitor Information</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">Best Rate Gurantee</a></td>
+        <td><a href="#">Therapy Bar</a></td>
+        <td><a href="#">Our Location</a></td>
+      </tr>
+      <tr>
+        <td><a href="../Rooms/rooms.html">Rooms</a></td>
+        <td><a href="../Offerings/Offering.html">Services</a></td>
+        <td><a href="#">From Narita</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">Our Employees</a></td>
+        <td><a href="#">Our Story</a></td>
+        <td><a href="#">From Haneda</a></td>
+      </tr>
+      <tr>
+        <td><a href="#">Employment</a></td>
+      	<td><a href="#">Think Green</a></td>
+        <td><a href="../Sitemap/Sitemap.html">SiteMap</a></td>
+      </tr>
+    </table>
+  </div>
+  <ul id="fa-ul" class="pc">
+    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+    <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+  </ul>
+  <ul id="credit" class="pc">
+    <li><a href="#"><img src="../common/images/JA.jpg" width="67" height="50" alt="Japan Hotel Association"/></a></li>
+    <li><a href="#"><img src="../common/images/BRG.png" width="57" height="50" alt="Best Rate Gurantee"/></a></li>
+    <li><a href="#"><img src="../common/images/TripA.jpg" width="52" height="50" alt="Winner of Trip Advisor Award 2014"/></a></li>
+  </ul>
+  <ul id="contact" class="sp">
+    <li><a href="tel:+810312345678"><img src="../common/images/call.png" width="65" height="65" alt="Call Us"/></a></li>
+    <li><a href="mailto:info@dammy.com"><img src="../common/images/email.png" width="65" height="65" alt="Email Us"/></a></li>
+    <li><a href="www.facebook.com/skytreehotel"><img src="../common/images/facebook.png" width="65" height="65" alt="Facebook Us"/></a></li>
+    <li><a href="www.twitter.com/skytreehotel"><img src="../common/images/twitter.png" width="65" height="65" alt="Tweet Us"/></a></li>
+    <li><a href="https://maps.google.com/?q=35.710427, 139.81101"><i class="fa fa-map-marker fa-5x fa-fw"></i>Map Us!</a></li>
+  </ul>
+  <address>SkyTree Hotel Co. Tokyo, Japan. All Rights Reserved. 2015</address>
+</div>
+<script type="text/javascript">
+
+	var position = [35.710427, 139.81101];
+    function showGoogleMaps() {
+    var latLng = new google.maps.LatLng(position[0], position[1]);
+
+    var mapOptions = {
+    zoom: 15,
+    streetViewControl: false,
+    scaleControl: false,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    center: latLng
+    };
+
+    map = new google.maps.Map(document.getElementById('googlemaps'),
+    mapOptions);
+
+    marker = new google.maps.Marker({
+    position: latLng,
+    map: map,
+    draggable: false,
+    animation: google.maps.Animation.DROP
+    });
+    }
+
+    google.maps.event.addDomListener(window, 'load', showGoogleMaps);
+</script>
+</body>
+</html>
